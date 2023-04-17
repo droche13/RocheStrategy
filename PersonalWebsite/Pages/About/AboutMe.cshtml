@@ -1,0 +1,387 @@
+﻿@page
+@model PersonalWebsite.Pages.About.AboutMeModel
+@{
+    ViewData["Title"] = "About Me";
+
+}
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.2/css/all.css" integrity="xxx" crossorigin="anonymous">
+    <script src="https://pro.fontawesome.com/releases/v5.15.2/js/all.js" integrity="xxx" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    /* Background gradient */
+    body {
+        background: linear-gradient(135deg, #1B262C, #0F4C75, #3282B8);
+        font-family: american typewriter, serif;
+    }
+
+    .fa {
+        font-size: 32px;
+    }
+
+    .btn-primary i.fa-phone {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .btn-primary[href^="tel:"] {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    /* Text styles */
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #F0F0F0;
+    }
+
+        h2:hover {
+            transition: font-size 0.3s ease-in-out;
+            font-size: 48px;
+        }
+
+    h3 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #F0F0F0;
+    }
+
+        h3:hover {
+            transition: font-size 0.3s ease-in-out;
+            font-size: 48px;
+        }
+
+    p {
+        color: #F0F0F0;
+        font-size: 20px;
+    }
+
+
+    a {
+        color: #F0F0F0;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    /* Button styles */
+    .btn-primary {
+        background-color: #0F4C75;
+        border-color: #0F4C75;
+    }
+
+        .btn-primary:hover {
+            background-color: #3282B8;
+            border-color: #3282B8;
+        }
+
+
+    .profile-picture {
+        border: 8px solid #F0F0F0;
+    }
+
+    
+    #myCarousel {
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+        #myCarousel.show {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    #musicCarousel {
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+        #musicCarousel.show {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+
+    .carousel-item img {
+        width: 100%;
+        height: 600px; /* set the height to your desired value */
+        object-fit: cover;
+    }
+
+    #secondCarousel {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+        #secondCarousel.show {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+</style>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <br />
+            <img src="~/Images/headshot.jpeg" class="img-fluid rounded-circle" alt="Profile Picture" style="border: 6px double white;">
+
+
+        </div>
+        <div class="col-md-6 text-center">
+            <h2></h2>
+            <br />
+
+            <p>I am a passionate technology strategy consultant and recent graduate of James Madison University (Go Dukes!).</p>
+            <br />
+            <p>
+                I leverage my expertise in business analysis to design web applications that match the expanding technological needs of my clients.
+                My goal is to help you create elegant and efficient solutions to your business' technological hurdles while providing you with a strategy to maximize the impact of your investment.
+            </p>
+            <br />
+            <p>
+                Outside of work, you can find me spending time with family & friends, enjoying the outdoors, and listening to music!
+            </p>
+            <br />
+
+
+            <p><b>Like what you see?</b> Contact me below to find out how I can help your business accomplish its goals!</p>
+            <div class="mt-4">
+                <a href="https://www.linkedin.com/in/devinroche13/" class="btn btn-primary mr-2" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a href="mailto:rochestrategy@gmail.com" class="btn btn-primary" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+                <a class="btn btn-primary" href="tel:+17036776187"><i class="fas fa-phone fa-2x"></i> (703)-677-6187</a>
+
+            </div>
+            <br />
+            <p>Want to see more? Keep scrolling to learn more about me!</p>
+        </div>
+    </div>
+</div>
+<br />
+
+
+<br />
+<br />
+
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <div style="padding-top: 100px;">
+                <h3>Travels</h3>
+                <br />
+                <p>I've had the priveledge to visit some really cool places including Hati, the Dominican Republic, Hawaii, and New York City.</p>
+                <br />
+                <p>Getting to visit new places and experience different cultures is one of my favorite things to do. A couple places on my current travel bucket list are
+                   Spain, Italy, India, and Indonesia. If you have any reccomendations please let me know!
+                </p>
+                <br />
+                <p>Scroll through and check out some of the recent pictures I've taken!</p>
+            </div>
+
+
+        </div>
+        <div class="col-md-6 order-md-2">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="~/Images/newyork.jpg" class="img-fluid rounded-circle" alt="New York City" style="border: 6px double white;">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="~/Images/hawaii.jpg" class="img-fluid rounded-circle" alt="Hawaii" style="border: 6px double white;">
+
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="~/Images/boatview.jpg" class="img-fluid rounded-circle" alt="Rhode Island" style="border: 6px double white;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Images/nature.jpg" class="img-fluid rounded-circle" alt="Shennandoah" style="border: 6px double white;">
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<br />
+<br />
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div id="secondCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/Images/IMChampionship.jpg" class="img-fluid rounded-circle" alt="First slide" style="border: 6px double white;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Images/Basketball.jpg" class="img-fluid rounded-circle" alt="Second slide" style="border: 6px double white;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Images/CourtStorm.jpg" class="img-fluid rounded-circle" alt="Third slide" style="border: 6px double white;">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#secondCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#secondCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <br />
+            <br />
+            <h3>Sports</h3>
+            <br />
+
+            <p>I've grown up playing and watching sports all my life. With family from Baltimore, I have become a huge Ravens and Orioles fan.</p>
+            <br />
+            <p>I enjoy, football, basketball, and baseball the most but am always looking for new sports and activites to help keep active!</p>
+            <br />
+            <p>
+                Sports have given me some pretty cool opportunities. From playing on the JMU basketball court for an intramural championship,
+                rushing the floor after a win against UVA, and just getting to spend time with friends and family at games,
+                I have had the chance to make many memories.
+            </p>
+            <br />
+            <p>Check some of them out!</p>
+
+
+
+        </div>
+    </div>
+</div>
+
+<br />
+<br />
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <div style="padding-top: 50px;">
+                <h3>Music</h3>
+                <br />
+                <p>Music is a huge part of my life! Whether I'm working, exercising, or relaxing you will likely find me listening to some type of music.</p>
+                <br />
+                <p>
+                    I love listening to all different types of music but my favorite genres are hip-hop, RnB, and alt-rock! One of my goals for the coming year
+                    is to go to as many concerts as possible. If you have any music suggestions or have seen some great concerts please reach out!
+                </p>
+                <br />
+                <p>Scroll through and check out some recent concerts I've been to and artists I've been listening to!</p>
+            </div>
+
+
+        </div>
+        <div class="col-md-6 order-md-2">
+            <div id="musicCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="~/Images/JoeyConcert.jpg" class="img-fluid rounded-circle" alt="New York City" style="border: 6px double white;">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="~/Images/CartiConcert.jpg" class="img-fluid rounded-circle" alt="Hawaii" style="border: 6px double white;">
+
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="~/Images/asap.jpeg" class="img-fluid rounded-circle" alt="Rhode Island" style="border: 6px double white;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Images/beatles.jpeg" class="img-fluid rounded-circle" alt="Shennandoah" style="border: 6px double white;">
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#musicCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#musicCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/d1c6dc5735.js" crossorigin="anonymous"></script>
+    <script>const text = "About Me";
+        let index = 0;
+        const h2 = document.querySelector("h2");
+        const typing = setInterval(() => {
+            h2.textContent += text[index];
+            index++;
+            if (index === text.length) clearInterval(typing);
+        }, 100);</script>
+
+  
+    <script>$(document).ready(function () {
+            $(window).scroll(function () {
+                var top_of_element = $("#myCarousel").offset().top;
+                var bottom_of_element = $("#myCarousel").offset().top + $("#myCarousel").outerHeight();
+                var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+                var top_of_screen = $(window).scrollTop();
+
+                if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
+                    $("#myCarousel").addClass("show");
+                } else {
+                    $("#myCarousel").removeClass("show");
+                }
+            });
+        });</script>
+
+    <script>$(document).ready(function () {
+            $(window).scroll(function () {
+                var top_of_element = $("#secondCarousel").offset().top;
+                var bottom_of_element = $("#secondCarousel").offset().top + $("#secondCarousel").outerHeight();
+                var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+                var top_of_screen = $(window).scrollTop();
+
+                if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
+                    $("#secondCarousel").addClass("show");
+                } else {
+                    $("#secondCarousel").removeClass("show");
+                }
+            });
+        });</script>
+
+    <script>$(document).ready(function () {
+            $(window).scroll(function () {
+                var top_of_element = $("#musicCarousel").offset().top;
+                var bottom_of_element = $("#musicCarousel").offset().top + $("#musicCarousel").outerHeight();
+                var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+                var top_of_screen = $(window).scrollTop();
+
+                if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
+                    $("#musicCarousel").addClass("show");
+                } else {
+                    $("#musicCarousel").removeClass("show");
+                }
+            });
+        });</script>
+
+}

@@ -1,0 +1,207 @@
+﻿@page
+@model PersonalWebsite.Pages.Services.StrategyConsultingModel
+@{
+    ViewData["Title"] = "Technology Strategy Consulting";
+
+}
+
+<style>
+    body {
+        background: linear-gradient(135deg, #1B262C, #0F4C75, #3282B8);
+        font-family: american typewriter, serif;
+    }
+
+    h1 {
+        color: #F0F0F0;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+        h1:hover {
+            transition: font-size 0.3s ease-in-out;
+            font-size: 48px;
+        }
+
+    h2 {
+        color: #F0F0F0;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+    }
+
+    h4 {
+        color: #F0F0F0;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    h3 {
+        color: black;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+        color: white;
+        text-align: center;
+        color: black;
+    }
+
+    .testimonial {
+        margin: 1rem;
+        padding: 2rem;
+        background-color: #F0F0F0;
+        border-radius: 1rem;
+    }
+
+        .testimonial p {
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+
+        .services div {
+            text-align: center;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: #F0F0F0;
+            border-radius: 1rem;
+            width: 200px;
+        }
+
+            .services div:hover {
+                transform: scale(1.1)
+            }
+
+        .services i {
+            font-size: 3rem;
+            color: #3282B8;
+        }
+
+        .services p {
+            font-size: 1.2rem;
+        }
+
+    .btn {
+        padding: 1rem;
+        background: linear-gradient(135deg, #1B262C, #0F4C75, #3282B8);
+        color: #F0F0F0;
+        border: none;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+</style>
+<br />
+<h1></h1>
+
+<div class="services">
+    <div>
+        <i class="fas fa-cog"></i>
+        <p>Technology Strategy</p>
+    </div>
+    <div>
+        <i class="fas fa-cloud"></i>
+        <p>Cloud-Based Solutions</p>
+    </div>
+    <div>
+        <i class="fas fa-lock"></i>
+        <p>Cybersecurity & Risk Management</p>
+    </div>
+</div>
+<br />
+<br />
+<div class="testimonial">
+    <h3>Why Choose Our Technology Strategy Service?</h3>
+
+    <h6>
+        At RocheStrategy, we specialize in creating customized technology strategy solutions that meet the
+        unique needs of your business. By working with us, you can expect to benefit in several ways:
+    </h6>
+    <br />
+    <h2>Comprehensive Technology Assessment</h2>
+    <h6>
+        We'll conduct a thorough assessment of your current technology infrastructure, identifying gaps and areas for improvement.
+        Our team of experts will develop a technology strategy that aligns with your business goals and objectives, ensuring that your technology
+        supports and enhances your overall operations.
+    </h6>
+    <br />
+    <h2>Cloud Solutions</h2>
+    <h6>
+        We can help you migrate to the cloud, providing you with scalable, reliable, and cost-effective cloud solutions. From cloud infrastructure
+        to cloud-based applications and services, we'll help you choose the right solutions for your business.
+    </h6>
+    <br />
+    <h2>Cybersecurity & Risk Management</h2>
+    <h6>
+        We'll help you protect your business from cyber threats, developing and implementing a comprehensive cybersecurity strategy.
+        Our team will conduct a risk assessment, identify vulnerabilities, and recommend and implement appropriate security controls
+        to ensure that your data and operations are protected.
+    </h6>
+    <br />
+    <h2>Technology Implementation & Support</h2>
+    <h6>
+        Our team will help you implement your technology strategy, providing ongoing support and maintenance to ensure that your systems
+        and applications are running smoothly. We'll also provide training and support to your employees, ensuring that they have the skills
+        and knowledge they need to effectively use your technology solutions.
+    </h6>
+    <br />
+    <h2>Technology Innovation & Optimization</h2>
+    <h6>
+        We'll help you stay ahead of the curve by identifying and implementing emerging technologies that can enhance your operations and improve
+        your competitive advantage. We'll also work with you to optimize your existing technology solutions, ensuring that they continue
+        to support and enhance your business over time.
+    </h6>
+</div>
+<br />
+<br />
+<h4 style="text-align: center;">Client Testimonials</h4>
+<div class="testimonial">
+    <p>
+        "RocheStrategy helped us develop a comprehensive technology strategy that aligned with our business goals and objectives.
+        Their team of experts provided us with the guidance and support we needed to optimize our technology infrastructure and enhance our operations."
+    </p>
+    <p>- Jeff Bezos, CTO</p>
+    <a class="btn btn-primary" asp-page="/Projects/Projects">See Our Work</a>
+</div>
+<br />
+<br />
+<h4 style="text-align: center;">Interested in Moving Forward? Contact Me Below!</h4>
+<div class="mt-4" style="text-align: center;">
+
+    <a href="mailto:rochestrategy@gmail.com" class="btn btn-primary" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+    <a class="btn btn-primary" href="tel:+17036776187"><i class="fas fa-phone fa-2x"></i> (703)-677-6187</a>
+
+</div>
+
+
+
+<script src="https://kit.fontawesome.com/d1c6dc5735.js" crossorigin="anonymous"></script>
+
+<script>const text = "Technology Strategy Consulting";
+        let index = 0;
+        const h2 = document.querySelector("h1");
+        const typing = setInterval(() => {
+            h2.textContent += text[index];
+            index++;
+            if (index === text.length) clearInterval(typing);
+        }, 100);</script>

@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{268D262D-3102-42AE-9094-9AF7AAD48CAE}|https">
+  <MonoDevelop.Ide.ItemProperties.PersonalWebsite PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PersonalWebsite/Pages/About/AboutMe.cshtml">
+    <Files>
+      <File FileName="PersonalWebsite/Pages/About/AboutMe.cshtml" Line="189" Column="7" />
+      <File FileName="PersonalWebsite/Pages/Projects/Projects.cshtml" Line="51" Column="5" />
+      <File FileName="PersonalWebsite/Pages/Shared/_Layout.cshtml" Line="19" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PersonalWebsite" expanded="True">
+            <Node name="PersonalWebsite" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="About" expanded="True">
+                  <Node name="AboutMe.cshtml" expanded="True" selected="True" />
+                </Node>
+                <Node name="Projects" expanded="True" />
+                <Node name="Services" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="Images" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

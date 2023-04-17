@@ -1,0 +1,212 @@
+﻿@page
+@model PersonalWebsite.Pages.Services.WebBrandDevelopmentModel
+@{
+    ViewData["Title"] = "Web & Brand Development";
+
+}
+
+<style>
+    body {
+        background: linear-gradient(135deg, #1B262C, #0F4C75, #3282B8);
+        font-family: american typewriter, serif;
+    }
+
+    h1 {
+        color: #F0F0F0;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+        h1:hover {
+            transition: font-size 0.3s ease-in-out;
+            font-size: 48px;
+        }
+
+    h2 {
+        color: #F0F0F0;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+    }
+
+    h4 {
+        color: #F0F0F0;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    h3 {
+        color: black;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+        color: white;
+        text-align: center;
+        color: black;
+    }
+
+    .testimonial {
+        margin: 1rem;
+        padding: 2rem;
+        background-color: #F0F0F0;
+        border-radius: 1rem;
+    }
+
+        .testimonial p {
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+
+        .services div {
+            text-align: center;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: #F0F0F0;
+            border-radius: 1rem;
+            width: 200px;
+        }
+
+            .services div:hover {
+                transform: scale(1.1)
+            }
+
+        .services i {
+            font-size: 3rem;
+            color: #3282B8;
+        }
+
+        .services p {
+            font-size: 1.2rem;
+        }
+
+    .btn {
+        padding: 1rem;
+        background: linear-gradient(135deg, #1B262C, #0F4C75, #3282B8);
+        color: #F0F0F0;
+        border: none;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+</style>
+<br />
+<h1></h1>
+
+<div class="container">
+
+    <div class="services">
+        <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <p>Custom Web Development</p>
+        </div>
+        <div>
+            <i class="fas fa-palette"></i>
+            <p>Customer-Driven Brand Redesign</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-handshake"></i>
+            <p>Implementation & Support Strategy</p>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="testimonial">
+        <h3>Why Choose Our Web & Brand Development Service?</h3>
+
+        <h6>
+            At RocheStrategy, we specialize in creating customized web and brand development solutions that meet the
+            unique needs of your business. By working with us, you can expect to benefit in several ways:
+        </h6>
+        <br />
+        <h2>Professional Design & Development</h2>
+        <h6>
+            We take pride in creating professional and visually appealing websites that are tailored to your brand and target audience.
+            Our experienced team of designers and developers will work closely with you to ensure that your website not only looks great,
+            but also functions seamlessly across all devices.
+        </h6>
+        <br />
+        <h2>Search Engine Optimization (SEO)</h2>
+        <h6>
+            Our web development services include search engine optimization (SEO) to ensure that your website is visible to potential
+            customers. We'll conduct a thorough analysis of your industry and target market to identify the most relevant keywords and phrases,
+            and then optimize your website accordingly to boost your search engine rankings and drive more traffic to your site.
+        </h6>
+        <br />
+        <h2>Consistent Branding & Messaging</h2>
+        <h6>
+            A strong brand identity is key to standing out in today's competitive market. That's why we'll work with you to develop a
+            consistent brand identity and messaging that resonates with your target audience. From your website to your social media profiles
+            and marketing materials, we'll ensure that your brand is cohesive and memorable.
+        </h6>
+        <br />
+        <h2>Improved User Experience</h2>
+        <h6>
+            User experience is a critical component of any successful website. Our team will optimize your site's navigation,
+            usability, and load times to ensure that visitors can easily find what they're looking for and have a positive experience
+            on your site.
+        </h6>
+        <br />
+        <h2>Ongoing Support & Maintenance</h2>
+        <h6>
+            We're committed to providing ongoing support and maintenance to ensure that your website stays up-to-date and functions smoothly.
+            From security updates to content management, we'll take care of the technical details so that you can focus on
+            running your business.
+        </h6>
+    </div>
+    <br />
+    <br />
+    <h4 style="text-align: center;">Client Testimonials</h4>
+    <div class="testimonial">
+        <p>
+            "Working with Devin on our website redesign was an absolute pleasure. He was able to take our ideas and turn them into
+            a stunning, user-friendly site that exceeded our expectations."
+        </p>
+        <p>- John Smith, CEO</p>
+        <a class="btn btn-primary" asp-page="/Projects/Projects">See Our Work</a>
+    </div>
+    <br />
+    <br />
+    <h4 style="text-align: center;">Interested in Moving Forward? Contact Me Below!</h4>
+    <div class="mt-4" style="text-align: center;">
+
+        <a href="mailto:rochestrategy@gmail.com" class="btn btn-primary" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+        <a class="btn btn-primary" href="tel:+17036776187"><i class="fas fa-phone fa-2x"></i> (703)-677-6187</a>
+
+    </div>
+</div>
+
+
+
+<script src="https://kit.fontawesome.com/d1c6dc5735.js" crossorigin="anonymous"></script>
+
+<script>const text = "Web & Brand Development";
+    let index = 0;
+    const h2 = document.querySelector("h1");
+    const typing = setInterval(() => {
+        h2.textContent += text[index];
+        index++;
+        if (index === text.length) clearInterval(typing);
+    }, 100);</script>
+

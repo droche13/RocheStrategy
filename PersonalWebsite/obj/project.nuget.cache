@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "s3pLYFdg32veugLpDl+TRalj8THmaOPOCSkqmOLx3pw7oz1f6vQnZObZSOCeuFlLgpVs36BK6dwAnq884oTFDw==",
+  "success": true,
+  "projectFilePath": "/Users/devin/Desktop/Portfolio/Personal Website/PersonalWebsite/PersonalWebsite/PersonalWebsite.csproj",
+  "expectedPackageFiles": [
+    "/Users/devin/.nuget/packages/font.awesome/5.15.4/font.awesome.5.15.4.nupkg.sha512"
+  ],
+  "logs": []
+}

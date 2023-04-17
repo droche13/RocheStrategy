@@ -1,0 +1,207 @@
+﻿@page
+@model PersonalWebsite.Pages.Resume.ResumeModel
+@{
+    ViewData["Title"] = "Resume";
+
+}
+<style>
+    body {
+        background: linear-gradient(135deg, #1B262C, #0F4C75, #3282B8);
+        font-family: american typewriter, serif;
+    }
+
+    .header {
+        cursor: pointer;
+        font-weight: bold;
+        background: linear-gradient(135deg, #1B262C, #0F4C75, #3282B8);
+        color: #F0F0F0;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .content {
+        display: none;
+        background-color: #0F4C75;
+        color: #1B262C;
+        padding: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        
+    }
+
+        .content.hide {
+            display: none;
+        }
+
+        .content.show {
+            display: block;
+            
+        }
+
+    h1 {
+        color: #F0F0F0;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+        h1:hover {
+            transition: font-size 0.3s ease-in-out;
+            font-size: 48px;
+        }
+
+
+    h2 {
+        color: #F0F0F0;
+        text-align: left;
+        font-size: 32px;
+        transition: font-size 0.3s ease-in-out;
+        margin-bottom: 1rem;
+    }
+
+        h2:hover {
+            font-size: 36px;
+        }
+
+    h5 {
+        color: #F0F0F0;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    p {
+        color: #F0F0F0;
+        text-align: left;
+    }
+
+    li {
+        color: #F0F0F0;
+    }
+</style>
+
+<br />
+
+<h1>
+</h1>
+<br />
+<div class="section">
+    <h2 class="header">IT Skills  <i class="fa-solid fa-computer"></i></h2>
+
+    <div class="content show">
+        <p><b>Programming:</b> ASP.NET Core Razor Pages, C#, HTML, CSS, Java, Python</p>
+        <p><b>Web Design:</b> UI/UX Mockups</p>
+        <p><b>Systems Analysis:</b> Agile/Scrum, Feasibility Analysis, Requirements Elicitation, UML Diagramming</p>
+        <p><b>IT Consulting:</b> RFP/Proposal Analysis and Response</p>
+        <p><b>Database Design:</b> SQL Server, Oracle, ER Diagrams, Data Modeling, DDL scripting</p>
+        <p><b>Cloud Server Management:</b> Amazon Web Services (AWS), Azure, Linux</p>
+        <p><b>Network Management:</b> Cisco Packet Tracer, TCP/IP, Routers/Switches, Firewalls</p>
+        <p><b>Data Analytics:</b> SQL, Excel</p>
+        <p><b>Cybersecurity:</b> Risk Assessment, Identity Management</p>
+        <p><b>Microsoft Suite:</b> Powerpoint, Sharepoint, Teams, Word</p>
+    </div>
+</div>
+<br />
+<div class="section">
+    <h2 class="header">Experience  <i class="fa-solid fa-chart-line"></i></h2>
+
+    <div class="content show">
+        <p><b>Information Technology Intern (May 2022 - Aug 2022)</b></p>
+        <p>Defensive Cyber Operations, U.S. Army PEO EIS</p>
+        <ul>
+            <li>Utilized Ansible scripts and Linux commands to image and deploy software on to master laptops</li>
+            <li>Navigated Red Hat Enterprise Linux to set up virtual machines and control identity management</li>
+            <li>Explored basic cybersecurity practices regarding troubleshooting, threat emulation, and network architecture for big data platforms in the cloud</li>
+            <li>Participated in vendor engagement meetings to assist with requirement development for procurement</li>
+            <li>Assisted in briefing senior officials within the DoD and U.S. Army on topics ranging from cybersecurity solutions, data collection techniques, and policy effectiveness</li>
+
+        </ul>
+        <br />
+        <p><b>Delivery Expert (April 2020 - Aug 2021)</b></p>
+        <p>Domino's Pizza</p>
+        <ul>
+            <li>Delivered an average of 70 orders totaling $2,500 per week</li>
+            <li>Successfully trained 4 new employees on all business operations</li>
+            <li>Collaborated with a diverse group of coworkers to ensure store efficiency</li>
+            <li>Utilized time management skills to consistently maintain an above average order completion pace</li>
+
+        </ul>
+    </div>
+</div>
+<br />
+<div class="section">
+    <h2 class="header">Projects  <i class="fa-solid fa-list-check"></i></h2>
+
+    <div class="content show">
+        <p><b>Lead Developer (January 2023 - May 2023)</b></p>
+        <p>CIS Capstone, Information Systems Implementation & Development</p>
+        <ul>
+            <li>Led a team of 11 to develop an application to automate the office hours process at JMU</li>
+            <li>Developed database schemas, designed user interface mockups, and developed core application functionality</li>
+            <li>Worked directly with cross-functional colleagues within the School of Media Arts & Design to enchance the application design and experience</li>
+            <li>Utilized C# (.NET), HTML/CSS, Javascript, and SQL Server to develop the application and AWS EC2 and RDS to deploy it to the cloud</li>
+            <li>Worked in an agile development environment and lead presentations to clients during sprint reviews</li>
+            <li>Finished in the top 3 in a competition amongst 12 teams and 125 students</li>
+        </ul>
+    
+
+        <br />
+        <p><b>Project Manager (Oct 2022)</b></p>
+        <p>Deloitte Case Competition, Systems Analysis & Design</p>
+        <ul>
+            <li>Placed 1st out of 28 teams</li>
+            <li>Led a team of 4 to develop a technical solution to modernize the Veterans Health Association’s systems</li>
+            <li>Presented our solution in front of a panel of judges consisting of Deloitte employees</li>
+
+        </ul>
+    </div>
+</div>
+<br />
+<div class="section">
+    <h2 class="header">Education  <i class="fa-solid fa-graduation-cap"></i></h2>
+
+    <div class="content show">
+        <p><b>James Madison University, 2023</b></p>
+        <p>B.B.A. Computer Information Systems</p>
+        <p>GPA: 3.77</p>
+    </div>
+</div>
+
+
+@section Scripts {
+
+    <script src="https://kit.fontawesome.com/d1c6dc5735.js" crossorigin="anonymous"></script>
+
+    <script>const text = "Resume";
+        let index = 0;
+        const h2 = document.querySelector("h1");
+        const typing = setInterval(() => {
+            h2.textContent += text[index];
+            index++;
+            if (index === text.length) clearInterval(typing);
+        }, 100);
+        // Get all the headers
+        var headers = document.querySelectorAll(".header");
+
+        // Show all content by default
+        var contents = document.querySelectorAll(".content");
+        contents.forEach(function (content) {
+            content.classList.add("show");
+        });
+
+        // Add click event listener to each header
+        headers.forEach(function (header) {
+            header.addEventListener("click", function () {
+                // Get the corresponding content
+                var content = this.nextElementSibling;
+
+                // Toggle the "show" class on the content
+                content.classList.toggle("show");
+            });
+        });</script>
+}
+
+
+
+
+

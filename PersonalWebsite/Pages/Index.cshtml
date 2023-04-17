@@ -1,0 +1,118 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<style>
+    body {
+        background: linear-gradient(135deg, #1B262C, #0F4C75, #3282B8);
+        font-family: american typewriter, serif;
+    }
+    h1 {
+        font-size: 55px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        color: white;
+    }
+        h1:hover {
+            transition: font-size 0.3s ease-in-out;
+            font-size: 60px;
+        }
+    p {
+        font-size: 24px;
+        margin-bottom: 30px;
+        color: white;
+    }
+    a {
+        color: #F0F0F0;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    .btn-primary {
+        background-color: #fff;
+        border-color: #fff;
+        color: #3282B8;
+        font-weight: bold;
+        margin-right: 10px;
+        transition: all 0.25s ease;
+    }
+
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: #fff;
+            color: #3282B8;
+            border-color: #fff;
+            transform: scale(1.1);
+            
+        }
+
+    
+ 
+
+   
+</style>
+
+<body>
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <br />
+                <img src="~/Images/headshot.jpeg" class="img-fluid rounded-circle" alt="Profile Picture" style="border: 6px double white;" />
+                
+            </div>
+            <div class="col-md-6">
+                <div class="text-center">
+                    <h1 id="title">Hi, I'm Devin Roche</h1>
+
+                    <p id="description" style="display:none">Strategy Consultant & Software Developer</p>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 10px;">
+                        <a class="btn btn-primary" href="/Services/Services"><i class="fa-solid fa-handshake"></i> Services</a>
+                        <a class="btn btn-primary" href="/Projects/Projects"><i class="fas fa-briefcase"></i> Projects</a>
+
+                        <a class="btn btn-primary" href="/Resume/Resume"><i class="fas fa-file-signature"></i> Resume</a>
+                        <a class="btn btn-primary" href="/About/AboutMe"><i class="fa-solid fa-person-walking"></i> About Me</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d1c6dc5735.js" crossorigin="anonymous"></script>
+    <script>$(document).ready(function () {
+            var title = $("#title");
+            var text = title.text().trim().split(" ");
+            title.empty();
+
+            var delay = 0;
+            var duration = 750;
+
+            for (var i = 0; i < text.length; i++) {
+                var span = $("<span>");
+                span.text(text[i] + " ");
+                title.append(span);
+                span.css("opacity", 0).delay(delay).animate({
+                    opacity: 1
+                }, duration, function () {
+                    if ($(this).is(":last-child")) {
+                        $("#buttons").fadeIn(700);
+                        $("#description").fadeIn(700);
+                    }
+                });
+                delay += duration / text.length;
+            }
+            });
+
+    </script>
+   
+
+</body>
+

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PersonalWebsite.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/d1c6dc5735.css" crossorigin="anonymous">
+
+
+
+</head>
+
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow" style="background: linear-gradient(135deg, #1B262C, #0F4C75, #3282B8);">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-center">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0" style="text-align: center;">
+
+                        <li class="nav-item" style="margin-left: 30px; margin-right: 30px;">
+                            <a class="nav-link text-white font-weight-bold" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 30px; margin-right: 30px;">
+                            <a class="nav-link text-white font-weight-bold" asp-area="" asp-page="/About/AboutMe">About Me</a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 30px; margin-right: 30px;">
+                            <a class="nav-link text-white font-weight-bold" asp-area="" asp-page="/Services/Services">Services</a>
+                        </li>
+
+                        <li class="nav-item" style="margin-left: 30px; margin-right: 30px;">
+                            <a class="nav-link text-white font-weight-bold" asp-area="" asp-page="/Projects/Projects">Projects</a>
+                        </li>
+
+                        <li class="nav-item" style="margin-left: 30px; margin-right: 30px;">
+                            <a class="nav-link text-white font-weight-bold" asp-area="" asp-page="/Resume/Resume">Resume</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

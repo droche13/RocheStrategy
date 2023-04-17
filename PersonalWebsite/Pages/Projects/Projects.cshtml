@@ -1,0 +1,97 @@
+﻿@page
+@model PersonalWebsite.Pages.Projects.PastProjectsModel
+@{
+    ViewData["Title"] = "Projects";
+
+}
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PersonalWebsite.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/d1c6dc5735.css" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background: linear-gradient(135deg, #1B262C, #0F4C75, #3282B8);
+        font-family: american typewriter, serif;
+    }
+    h1 {
+        color: #F0F0F0;
+        text-align: center;
+        font-size: 40px;
+        
+        font-weight: bold;
+    }
+        h1:hover {
+            transition: font-size 0.3s ease-in-out;
+            font-size: 48px;
+        }
+    .project-container {
+        background-color: #0F4C75;
+        padding: 20px;
+        text-align: center;
+        transition: all 0.25s ease;
+    }
+     .project-container:hover {
+        transform: scale(1.05);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .project-title {
+        font-size: 24px;
+        margin-top: 20px;
+        color: white;
+    }
+
+    .project-description {
+        font-size: 16px;
+        margin-top: 10px;
+        color: white;
+    }
+
+    
+    
+</style>
+<br />
+<h1></h1>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="project-container">
+                <h3 class="project-title">Systems Analysis & Design Competition</h3>
+                <embed src="~/Projects/VACaseSolution.pdf" width="100%" height="500px" />
+                
+                <p class="project-description">Acted as the project manager to lead a team of 4 and design a solution to modernize the technology utilized by the Veterans Health Association</p>
+                <p class="project-description">Placed 1st out of 28 teams</p>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="project-container">
+                <h3 class="project-title">Wags And Purrs System Proposal</h3>
+                <embed src="~/Projects/WagsAndPurrs.pdf" width="100%" height="500px" />
+
+                <p class="project-description">Acted as the project manager/systems analyst to design a proposal to automate and modernize the day-to-day operations of a local animal care/boarding facility</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <script>const text = "Projects";
+        let index = 0;
+        const h2 = document.querySelector("h1");
+        const typing = setInterval(() => {
+            h2.textContent += text[index];
+            index++;
+            if (index === text.length) clearInterval(typing);
+        }, 100);</script>
+
+}
