@@ -4,6 +4,13 @@
     ViewData["Title"] = "Free Consultation";
 
 }
+<head>
+    
+    <!-- Bootstrap Datepicker CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+
+</head>
 
 <style>
     body {
@@ -22,6 +29,7 @@
             transition: font-size 0.3s ease-in-out;
             font-size: 48px;
         }
+
     h4 {
         color: #F0F0F0;
         text-align: center;
@@ -57,6 +65,7 @@
         background-color: #F0F0F0;
         border-radius: 1rem;
     }
+
     .btn {
         padding: 1rem;
         background: linear-gradient(135deg, #1B262C, #0F4C75, #3282B8);
@@ -73,6 +82,22 @@
         .btn:hover {
             transform: scale(1.1);
         }
+
+    p {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    label {
+        color: white;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .form-group{
+        margin-top: 15px;
+        margin-bottom: 3px;
+    }
 </style>
 <br />
 
@@ -89,15 +114,59 @@
     <h2>What You Gain From Our Free Consultation</h2>
     <h6>
         Our team will conduct a thorough assessment of your current technology infrastructure and business processes to identify gaps and areas for improvement.
-        We will provide you with a plan to help you decide if our services will indeed bring value to your business and help you build stronger relationships with your customers.  
+        We will provide you with a plan to help you decide if our services will indeed bring value to your business and help you build stronger relationships with your customers.
     </h6>
     <br />
     <h2>What's The Catch?</h2>
     <h6>Nothing! We will gladly meet with you completely free of charge, with our only goal being to help add long-term value to your business.</h6>
 
 </div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <p>Fill out the form below to request a free consultation with our team!</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address:</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Tell us a bit about your goals!"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="123-456-7890" required>
+                </div>
+                <div class="form-group">
+                    <label for="datepicker">Date:</label>
+                    <div class="input-group date" data-provide="datepicker">
+                        <input type="text" class="form-control" id="datepicker" required>
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" class="form-control" value="10:05 AM" />
+                </div>
+                <div class="d-flex align-items-center" style="margin-top: 25px;">
+                    <button type="submit" class="btn btn-primary mx-auto">Schedule</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 <br />
-<h4 style="text-align: center;">Interested in Moving Forward? Contact Me Below!</h4>
+<br />
+<h4 style="text-align: center;">Need More Information? Contact Me Below!</h4>
 <div class="mt-4" style="text-align: center;">
 
     <a href="mailto:rochestrategy@gmail.com" class="btn btn-primary" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
@@ -114,3 +183,22 @@
         index++;
         if (index === text.length) clearInterval(typing);
     }, 100);</script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- Bootstrap Datepicker JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<!-- Bootstrap Timepicker JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js"></script>
+
+<script>// Datepicker
+    $(document).ready(function () {
+        $('.datepicker').datepicker({
+            format: 'mm/dd/yyyy',
+            autoclose: true
+        });
+    });
+
+ </script>

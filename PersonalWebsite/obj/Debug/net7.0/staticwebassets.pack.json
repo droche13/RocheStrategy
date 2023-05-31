@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/PersonalWebsite.bundle.scp.css"
     },
     {
+      "Id": "/Users/devin/Desktop/Portfolio/Personal Website/PersonalWebsite/PersonalWebsite/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
       "Id": "/Users/devin/Desktop/Portfolio/Personal Website/PersonalWebsite/PersonalWebsite/wwwroot/Images/Basketball.jpg",
       "PackagePath": "staticwebassets/Images/Basketball.jpg"
     },
@@ -37,6 +41,18 @@
       "PackagePath": "staticwebassets/Images/boatview.jpg"
     },
     {
+      "Id": "/Users/devin/Desktop/Portfolio/Personal Website/PersonalWebsite/PersonalWebsite/wwwroot/Images/circlegrad.png",
+      "PackagePath": "staticwebassets/Images/circlegrad.png"
+    },
+    {
+      "Id": "/Users/devin/Desktop/Portfolio/Personal Website/PersonalWebsite/PersonalWebsite/wwwroot/Images/grad.jpeg",
+      "PackagePath": "staticwebassets/Images/grad.jpeg"
+    },
+    {
+      "Id": "/Users/devin/Desktop/Portfolio/Personal Website/PersonalWebsite/PersonalWebsite/wwwroot/Images/graduation.jpeg",
+      "PackagePath": "staticwebassets/Images/graduation.jpeg"
+    },
+    {
       "Id": "/Users/devin/Desktop/Portfolio/Personal Website/PersonalWebsite/PersonalWebsite/wwwroot/Images/hawaii.jpg",
       "PackagePath": "staticwebassets/Images/hawaii.jpg"
     },
@@ -55,6 +71,14 @@
     {
       "Id": "/Users/devin/Desktop/Portfolio/Personal Website/PersonalWebsite/PersonalWebsite/wwwroot/Images/rhodeisland.jpg",
       "PackagePath": "staticwebassets/Images/rhodeisland.jpg"
+    },
+    {
+      "Id": "/Users/devin/Desktop/Portfolio/Personal Website/PersonalWebsite/PersonalWebsite/wwwroot/Projects/OfficeOURS Digital Documentation.pdf",
+      "PackagePath": "staticwebassets/Projects/OfficeOURS Digital Documentation.pdf"
+    },
+    {
+      "Id": "/Users/devin/Desktop/Portfolio/Personal Website/PersonalWebsite/PersonalWebsite/wwwroot/Projects/OfficeOURS Pitch Deck.pdf",
+      "PackagePath": "staticwebassets/Projects/OfficeOURS Pitch Deck.pdf"
     },
     {
       "Id": "/Users/devin/Desktop/Portfolio/Personal Website/PersonalWebsite/PersonalWebsite/wwwroot/Projects/VACaseSolution.pdf",

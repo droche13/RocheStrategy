@@ -15,6 +15,7 @@
         background: linear-gradient(135deg, #1B262C, #0F4C75, #3282B8);
         font-family: american typewriter, serif;
     }
+    
     h1 {
         color: #F0F0F0;
         text-align: center;
@@ -28,6 +29,7 @@
         }
     .project-container {
         background-color: #0F4C75;
+        margin-bottom: 40px;
         padding: 20px;
         text-align: center;
         transition: all 0.25s ease;
@@ -38,9 +40,10 @@
     }
 
     .project-title {
-        font-size: 24px;
-        margin-top: 20px;
+        font-size: 25px;
+        margin-top: 10px;
         color: white;
+
     }
 
     .project-description {
@@ -50,34 +53,72 @@
     }
 
     
+    .btn {
+        background: white;
+        border-radius: 20px;
+        font-size: .9rem;
+        color: #3282B8;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        padding: 10px 25px;
+        transition: all 0.25s ease;
+    }
+
+      
     
 </style>
 <br />
 <h1></h1>
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-6 mb-4">
-            <div class="project-container">
-                <h3 class="project-title">Systems Analysis & Design Competition</h3>
-                <embed src="~/Projects/VACaseSolution.pdf" width="100%" height="500px" />
-                
-                <p class="project-description">Acted as the project manager to lead a team of 4 and design a solution to modernize the technology utilized by the Veterans Health Association</p>
-                <p class="project-description">Placed 1st out of 28 teams</p>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="project-container">
-                <h3 class="project-title">Wags And Purrs System Proposal</h3>
-                <embed src="~/Projects/WagsAndPurrs.pdf" width="100%" height="500px" />
+<div class="container mt-5 d-flex justify-content-center">
 
-                <p class="project-description">Acted as the project manager/systems analyst to design a proposal to automate and modernize the day-to-day operations of a local animal care/boarding facility</p>
-            </div>
+    <div class="col-md-8 mb-4">
+        <div class="project-container">
+            <h3 class="project-title">OfficeOURS Queue Management System</h3>
+            <button class="btn" id="toggle-button" onclick="toggleEmbeds()">Click to View Digital Documentation</button>
+            <embed id="file1" src="~/Projects/OfficeOURS Pitch Deck.pdf" width="100%" height="500px" />
+            <embed id="file2" src="~/Projects/OfficeOURS Digital Documentation.pdf" width="100%" height="500px" style="display: none;" />
+            <p class="project-description">
+                Lead Developer on a team of 11 capstone students aiming to plan, design, and develop a CRUD application to automate the office hours process at JMU.
+            </p>
+            <p class="project-description">
+                Led throughout the product development lifecycle to create database schemas, design user interface mockups, and develop core application functionality such as create/signup features, queue manager, password encrption, live notifications, mobile responsiveness, data collection/visualization, etc.
+            </p>
+            <p class="project-description">
+                Collaborated directly with cross-functional colleagues within the School of Media Arts & Design to enchance the application design and experience.
+            </p>
+            <p class="project-description">
+                Utilized C# (.NET), HTML/CSS, Javascript, and SQL Server to develop the application and AWS EC2 and RDS to deploy it to the cloud.
+                Conducted bi-weekly sprints in an agile development environment and led presentations to clients during sprint reviews.
+            </p>
+            <p class="project-description">Placed 3rd amgonst 12 teams consisting of 150 seniors.</p>
+
         </div>
-        
-    </div>
+
+
+
+    
+    
+        <div class="project-container">
+            <h3 class="project-title">Veterans Affairs Technological Modernization Strategy Plan</h3>
+            <embed src="~/Projects/VACaseSolution.pdf" width="100%" height="500px" />
+
+            <p class="project-description">Project manager to lead a team of 4 and design a solution to modernize the technology utilized by the Veterans Health Association.</p>
+            <p class="project-description">Placed 1st out of 28 teams.</p>
+        </div>
+    
+    
+        <div class="project-container">
+            <h3 class="project-title">Wags And Purrs System Proposal</h3>
+            <embed src="~/Projects/WagsAndPurrs.pdf" width="100%" height="500px" />
+
+            <p class="project-description">Project manager/systems analyst to design a proposal to automate and modernize the day-to-day operations of a local animal care/boarding facility.</p>
+        </div>
+    
+
+
 </div>
-
+    </div>
 
 
 
@@ -93,5 +134,25 @@
             index++;
             if (index === text.length) clearInterval(typing);
         }, 100);</script>
+    <script>
+        function toggleEmbeds() {
+            var toggleButton = document.getElementById("toggle-button");
+            var file1 = document.getElementById("file1");
+            var file2 = document.getElementById("file2");
+
+            if (file1.style.display === "none") {
+                file1.style.display = "block";
+                file2.style.display = "none";
+                toggleButton.innerHTML = "Click to View Digital Documentation";
+            } else {
+                file1.style.display = "none";
+                file2.style.display = "block";
+                toggleButton.innerHTML = "Click to View Project Overview";
+            }
+        }
+
+
+
+    </script>
 
 }
